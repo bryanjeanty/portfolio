@@ -42,16 +42,32 @@
     <div id="sidebar">
       <div id="brand-container"></div>
       <div id="tabs-container">
-        <div class="tabs fade-out bio-tab">
+        <div
+          class="tabs fade-out bio-tab"
+          data-toggle="modal"
+          data-target="#bio-modal"
+        >
           <i class="fas fa-book"></i> <span>Bio</span>
         </div>
-        <div class="tabs fade-out portfolio-tab">
+        <div
+          class="tabs fade-out portfolio-tab"
+          data-toggle="modal"
+          data-target="#portfolio-modal"
+        >
           <i class="fas fa-briefcase"></i> <span>Portfolio</span>
         </div>
-        <div class="tabs fade-out resume-tab">
+        <div
+          class="tabs fade-out resume-tab"
+          data-toggle="modal"
+          data-target="#resume-modal"
+        >
           <i class="fas fa-file"></i> <span>Resume</span>
         </div>
-        <div class="tabs fade-out contact-tab">
+        <div
+          class="tabs fade-out contact-tab"
+          data-toggle="modal"
+          data-target="#contact-modal"
+        >
           <i class="fas fa-envelope"></i> <span>Contact</span>
         </div>
       </div>
@@ -180,6 +196,159 @@
             <a href="#"><i class="social-icons fab fa-slack"></i></a>
             <a href="#"><i class="social-icons fab fa-linkedin"></i></a>
             <a href="#"><i class="social-icons fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Bio Modal -->
+    <div
+      class="modal fade"
+      id="bio-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="bio-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Short Biography</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span class="close-x" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            [Still Under Development]
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary close-modal"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade"
+      id="portfolio-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolio-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Portfolio</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            [Still Under Development]
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary close-modal"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div
+      class="modal fade"
+      id="resume-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="resume-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Resume</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            [Still Under Development]
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary close-modal"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div
+      class="modal fade"
+      id="contact-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contact-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Contact Me</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            [Still Under Development]
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary close-modal"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
