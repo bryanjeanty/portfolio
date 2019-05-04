@@ -5,6 +5,9 @@
   --primary-dark: #00a376;
   --primary-light: #20d3a6;
   --dark: #333;
+  --dark2a: rgba(60, 60, 60, 0.85);
+  --dark2b: rgba(60, 60, 60, 1);
+  --dark3: #444;
   --light: #fefefe;
 }
 
@@ -34,48 +37,96 @@ body {
   width: 0;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(to bottom, var(--dark2a), var(--dark2b));
 }
 
 #brand-container {
-  height: 20%;
-  border: 1px solid black;
+  height: 10%;
   display: flex;
 }
 
-/* #brand-container img {
-  width: 100%;
-} */
-
 #tabs-container {
-  height: 80%;
+  height: 90%;
   display: flex;
   flex-direction: column;
 }
 
 .tabs {
-  height: 15%;
-  /* border: 1px solid black; */
-  border-bottom: 1px solid var(--light);
-  text-align: center;
-  padding-top: 1.25rem;
-  background-color: var(--primary);
+  height: 3rem;
+  padding-left: 1rem;
+  padding-top: 0.75rem;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tabs > * {
+  margin-right: 0.35rem;
+}
+
+.portfolio-tab {
+  margin-top: 3rem;
+}
+
+.resume-tab {
+  margin-top: 6rem;
+}
+
+.contact-tab {
+  margin-top: 9rem;
+}
+
+.tabs.fade-out {
+  animation: fade-out 1.5s forwards;
+}
+
+.tabs.fade-in {
+  animation: fade-in 1.5s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* final */
 #sidebar.expanded {
-  width: 25%;
+  width: 18%;
 }
 
 /* conditions for content region */
 /* initial */
 #content {
   position: relative;
-  background: var(--primary);
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--primary-dark)
+  );
   width: 100%;
 }
 /* final */
 #content.collapsed {
-  width: 75%;
+  width: 82%;
 }
 
 /* svg conditions */
