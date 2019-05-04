@@ -37,21 +37,28 @@ body {
 }
 
 #brand-container {
-  height: 25%;
+  height: 20%;
   border: 1px solid black;
+  display: flex;
 }
 
+/* #brand-container img {
+  width: 100%;
+} */
+
 #tabs-container {
-  height: 75%;
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
 
-#tabs-container > * {
+.tabs {
   height: 15%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid var(--light);
   text-align: center;
   padding-top: 1.25rem;
+  background-color: var(--primary);
 }
 
 /* final */
@@ -130,7 +137,6 @@ body {
 }
 
 #toggle {
-  /* border: 1px solid black; */
   border: none;
   font-weight: 450;
   background-image: linear-gradient(
