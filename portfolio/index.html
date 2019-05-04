@@ -39,7 +39,15 @@
     <title>Bryan Jeanty | Home</title>
   </head>
   <body>
-    <div id="sidebar"></div>
+    <div id="sidebar">
+      <div id="brand-container"></div>
+      <div id="tabs-container">
+        <div class="tabs bio-tab">Bio</div>
+        <div class="tabs portfolio-tab">Portfolio</div>
+        <div class="tabs resume-tab">Resume</div>
+        <div class="tabs contact-tab">Contact</div>
+      </div>
+    </div>
     <div id="content">
       <div id="svg-container">
         <svg id="my-svg" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -64,8 +72,8 @@
               />
             </g>
             <path
+              id="pro-pic-aura"
               d="M145.283 286.016C223.675 286.016 287.225 222.466 287.225 144.073C287.225 65.681 223.675 2.13138 145.283 2.13138C66.8901 2.13138 3.34041 65.681 3.34041 144.073C3.34041 222.466 66.8901 286.016 145.283 286.016Z"
-              fill="#FFE896"
             />
             <g filter="url(#filter0_d)">
               <path
@@ -159,7 +167,7 @@
         <div id="heading-wrapper">
           <h1><span>Bryan</span> Jeanty</h1>
           <h4>Full Stack Developer</h4>
-          <button id="toggle" class="btn btn-dark">Learn More</button>
+          <button id="toggle" class="btn">Learn More</button>
           <div id="social">
             <a href="#"><i class="social-icons fab fa-slack"></i></a>
             <a href="#"><i class="social-icons fab fa-linkedin"></i></a>
