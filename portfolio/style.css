@@ -1,0 +1,72 @@
+/* global */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* variables */
+/* set */
+/* :root {
+    --main-bg-color: pink;
+}
+call
+body {
+    background-color: var(--main-bg-color)
+} */
+
+/* conditions for both regions */
+#sidebar,
+#content {
+  height: 100%;
+  overflow: auto;
+  float: left;
+  transition: width 0.75s;
+}
+
+/* condition for sidebar region */
+/* initial */
+#sidebar {
+  width: 0;
+}
+/* final */
+#sidebar.expanded {
+  width: 25%;
+}
+
+/* condition for content region */
+/* initial */
+#content {
+  position: relative;
+  background: gray;
+  width: 100%;
+}
+/* final */
+#content.collapsed {
+  width: 75%;
+}
+
+/* svg conditions */
+#svg-container {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#my-svg {
+  width: 100%;
+  height: 100%;
+}
+
+#my-polygon {
+  fill: lightblue;
+}
+
+button {
+  position: absolute;
+  z-index: 2;
+}
