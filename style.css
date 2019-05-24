@@ -20,6 +20,7 @@ body {
   text-decoration: none;
   list-style: none;
   color: var(--light);
+  overflow: hidden;
 }
 
 /* conditions for both regions */
@@ -241,4 +242,16 @@ body {
     var(--primary),
     var(--primary-dark)
   );
+}
+
+/* contact modal */
+#contact-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+#my-success-alert {
+  position: absolute;
+  display: none;
+  width: 80%;
 }
